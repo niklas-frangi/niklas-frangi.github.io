@@ -3,15 +3,28 @@
     max-width: 240px;
     border-radius: 50%;
     display: block;
-    margin: 1rem auto 1rem auto;
+    margin: 1rem auto 2rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container{
     padding-top: 2rem;
 }
 
+.roles {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.blueText{
+    color: #1DA1F2;
+    text-align: center;
+    font-size: 2rem;
+}
+
 body{
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
+    background-color: rgba(241, 241, 241, 0.76);
 }
 
 #links {
@@ -30,5 +43,9 @@ ul>li{
     text-align: center;
     padding:0;
     margin-top: 1rem;
+}
+
+.introText{
+    padding: 0 20px;
 }
 
