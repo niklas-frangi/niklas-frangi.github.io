@@ -1,3 +1,4 @@
+/* Gör profilbilden rund och ger den en skuggeffekt */
 #profileImg{
     width: 40%;
     max-width: 240px;
@@ -7,45 +8,85 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Flyttar ner innehållet från toppen av sidan */
 .container{
     padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
+/* lägger till backgroundsbilden som är längst upp på sidan */
+/* Image source: https://unsplash.com/photos/MgtHZ4zlC1U*/
+#imgTop{
+    background-image: url(backgroundImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 9.5rem;
+}
+
+/* Ändrar höjden på backgrundsbilden längst upp så att den ser likadan ut i samtliga vyer */
+@media (min-width: 480px) {
+    #imgTop{
+        background-image: url(backgroundImg.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 11rem;
+    }
+}
+@media (min-width: 768px) {
+    #imgTop{
+        background-image: url(backgroundImg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 13.5rem;
+    }
+}
+
+/* Ger en fetare text och tar bort margin från botten av varje arbetstitel */
 .roles {
     margin-bottom: 0;
     font-weight: 500;
 }
 
+/* Sätter en blå färg på Niklas Frangi, centrerar texten och ökar storleken relativt till originalstorleken */
 .blueText{
-    color: #1DA1F2;
+    color: #1894e0;
     text-align: center;
     font-size: 2rem;
 }
 
+/* Sätter även backgrundfärgen som är under bilden */
 body{
-    padding-bottom: 7rem;
-    background-color: rgba(241, 241, 241, 0.76);
+    background-color: rgb(241, 241, 241);
 }
 
+/* Tar bort punkterna från listan och även paddingen på vänstra sidan och gör så att listan visas vertikalt */
 #links {
     list-style-type: none;
     padding-left: 0;
-    display: inline;
-  }
+}
 
+/* Gör så att listan visas vertikalt */
 ul>li{
     display: inline-table;
 }
 
+/* Gör så att länkarna längst ner i listan centreras  */
 #ulLinks{
     width: 100%;
-    vertical-align: middle;
     text-align: center;
     padding:0;
     margin-top: 1rem;
 }
 
+/* Flyttar in texten från sidorna så att de är i samma bredd som texten i listan */
 .introText{
     padding: 0 20px;
 }
 
+/* Tar bort ramen från knapparna och ökar bredden på knapparna samt avståndet mellan dem */
+.changeBtn
+{
+    border: none;
+    width: 3rem;
+    margin: 0 .2rem;
+}
