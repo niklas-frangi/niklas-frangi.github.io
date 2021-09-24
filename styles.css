@@ -34,7 +34,7 @@
 }
 @media (min-width: 768px) {
     #imgTop{
-        background-image: url(backgroundImg.jpg);
+        background-image: url(backgroundImgMedium.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 13.5rem;
